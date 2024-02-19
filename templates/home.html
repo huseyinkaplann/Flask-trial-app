@@ -22,7 +22,11 @@
       <p class="lead">At elementum eu facilisis sed odio. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Mauris pellentesque pulvinar pellentesque habitant. Nibh tortor id aliquet lectus proin nibh. Vitae tempus quam pellentesque nec nam. Nunc mi ipsum faucibus vitae aliquet nec. Tempor orci dapibus ultrices in iaculis. Ut morbi tincidunt augue interdum. Rhoncus aenean vel elit scelerisque mauris pellentesque. Lacus vel facilisis volutpat est. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Turpis massa sed elementum tempus egestas sed. Et magnis dis parturient montes nascetur ridiculus mus mauris.</p>
       <p class="lead">Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Euismod elementum nisi quis eleifend quam adipiscing vitae. Pellentesque eu tincidunt tortor aliquam nulla facilisi. Orci sagittis eu volutpat odio facilisis mauris sit amet massa. Cum sociis natoque penatibus et magnis dis. Non diam phasellus vestibulum lorem sed risus. Mauris cursus mattis molestie a. Justo laoreet sit amet cursus sit. In arcu cursus euismod quis viverra. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. A diam sollicitudin tempor id eu nisl. Adipiscing commodo elit at imperdiet dui. Amet nisl purus in mollis nunc sed id semper. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Magna fringilla urna porttitor rhoncus dolor purus non enim.</p>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-      <p class="lead">TODO - Show the jobs here</p>
+      <div class="lead">
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">Copyright 2024, Kaplan</p>
